@@ -1,0 +1,15 @@
+welcome: Welcome back to the skill test. The current temperature in berlin is {{ temp }} degrees celsius. Are you ready to start?
+welcome-new: Welcome to the skill test for the first time. The current temperature in berlin is {{ temp }} degrees celsius. Are you ready to start?
+exit: Okay, see you another time.
+round: What is the result of {{ number1 }} times {{ number2 }}?
+lose: Sorry, that's the wrong answer. Better luck next time!
+trip: Perfect! I will book your ticket to travel by {{ travel }}. See you soon.
+
+win: |
+  <speak>
+    This is the
+    <emphasis level="strong">right</emphasis>
+    answer!
+    <break time="0.5s"/> 
+    You win a trip to Prague, how would you prefer to travel there?
+  </speak>

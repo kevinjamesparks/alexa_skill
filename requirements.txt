@@ -1,0 +1,5 @@
+flask
+flask-ask
+flask_sqlalchemy
+requests
+requests_oauthlib

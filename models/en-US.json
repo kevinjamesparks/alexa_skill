@@ -1,0 +1,96 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "quiz test",
+            "intents": [
+                {
+                    "name": "YesIntent",
+                    "slots": [],
+                    "samples": [
+                        "YesIntent yes",
+                        "YesIntent sure"
+                    ]
+                },
+                {
+                    "name": "NoIntent",
+                    "slots": [],
+                    "samples": [
+                        "NoIntent no"
+                    ]
+                },
+                {
+                    "name": "AnswerIntent",
+                    "slots": [
+                        {
+                            "name": "answer",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "AnswerIntent The answer is {answer}",
+                        "AnswerIntent {answer}"
+                    ]
+                },
+                {
+                    "name": "TripIntent",
+                    "slots": [
+                        {
+                            "name": "travel",
+                            "type": "LIST_OF_TRAVEL_MODES"
+                        }
+                    ],
+                    "samples": [
+                        "TripIntent I would prefer {travel}",
+                        "TripIntent I would prefer by {travel}",
+                        "TripIntent I would prefer to {travel}",
+                        "TripIntent {travel}",
+                        "TripIntent by {travel}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "LIST_OF_TRAVEL_MODES",
+                    "values": [
+                        {
+                            "id": "TRAIN",
+                            "name": {
+                                "value": "train",
+                                "synonyms": [
+                                    "train",
+                                    "train ride"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "FLY",
+                            "name": {
+                                "value": "flying",
+                                "synonyms": [
+                                    "plane",
+                                    "jet",
+                                    "fly",
+                                    "on an airplane"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "DRIVE",
+                            "name": {
+                                "value": "driving",
+                                "synonyms": [
+                                    "auto",
+                                    "automobile",
+                                    "taking a road trip",
+                                    "road trip",
+                                    "drive",
+                                    "to drive"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

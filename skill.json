@@ -1,0 +1,29 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Sample Short Description",
+          "examplePhrases": [
+            "Alexa open quiz test",
+            "Alexa start quiz test"
+          ],
+          "name": "quiz test",
+          "description": "Alexa Skill"
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Sample Testing Instructions.",
+      "category": "EDUCATION_AND_REFERENCE",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "sourceDir": "lambda/custom"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

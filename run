@@ -1,0 +1,31 @@
+#!/bin/bash
+TEST="test"
+SETUP_INSTALL="setup"
+START="start"
+red='tput setaf 1'
+reset='tput sgr0'
+
+
+echo "---------------------------------------------------------------------"
+$red
+echo "                           Alexa Skill                               "
+$reset
+echo "---------------------------------------------------------------------"
+
+which python
+
+printf "RUNNING COMMAND: %s\n" $1
+
+# Actions depending on script call
+if [[ $1 = $TEST ]]; then
+    python -m unittest
+elif [[ $1 = $SETUP_INSTALL ]]; then
+    pip install -r requirements.txt
+elif [[ $1 = $START ]]; then
+    python skilltest.py
+else
+    printf "COMMANDS:\n"
+    printf "%10s \t pip install -r requirements.txt\n" $SETUP_INSTALL
+    printf "%10s \t python skilltest.py\n" $START
+    printf "%10s \t python -m unittest\n" $TEST
+fi
